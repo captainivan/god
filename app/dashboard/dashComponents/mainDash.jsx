@@ -13,7 +13,7 @@ const MainDash = () => {
   useEffect(() => {
     const data = async () => {
       try {
-        const api = await fetch("https://3000-firebase-god-1748788752429.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev/api/diary", {
+        const api = await fetch("/api/diary", {
           method: "GET"
         });
         const res = await api.json();
